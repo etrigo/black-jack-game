@@ -1,0 +1,67 @@
+@import 'config';
+
+body {
+    height: 100vh;
+    background-image: url("/dist/img/casino-matt.jpg");
+    background-color: green;
+    background-position: center;
+    background-size: cover;
+}
+
+h2, h4, h6 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 15px;
+    color: white;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 15px;
+    color: white;
+}
+
+#winner {
+    padding-bottom: 20px;
+}
+
+.gameCards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    .card {
+        padding: 20px 10px;
+        height: 200px;
+        
+    }
+    
+}
+
+
+.buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    button {
+        @extend %button;
+        width: 100px;
+    }
+    
+    button:disabled {
+        @extend %button;
+        background-color: gray;
+        color: darkgray;
+    }
+
+    .wait {
+        background-color: yellow;
+        color: darkgray;
+    }
+}
