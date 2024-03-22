@@ -6,7 +6,7 @@ let getHtml = (x) => {
   for (let i = 0; i < theGame[x].cards.length; i++) {
     theGame[
       x
-    ].displayCards += `<img src="/img/${theGame[x].cards[i].cardNum}.png" alt="Cards" class="card">`;
+    ].displayCards += `<img src="/black-jack-game/img/${theGame[x].cards[i].cardNum}.png" alt="Cards" class="card">`;
   }
   return theGame[x].displayCards;
 };
