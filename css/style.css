@@ -4,7 +4,8 @@
   padding: 0;
 }
 
-.buttons button:disabled, .buttons button {
+.buttons button:disabled,
+.buttons button {
   padding: 10px 16px;
   margin: 40px 20px;
   background-color: green;
@@ -17,13 +18,15 @@
 
 body {
   height: 100vh;
-  background-image: url("/dist/img/casino-matt.jpg");
+  background-image: url('/img/casino-matt.jpg');
   background-color: green;
   background-position: center;
   background-size: cover;
 }
 
-h2, h4, h6 {
+h2,
+h4,
+h6 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-transform: capitalize;
   text-align: center;
